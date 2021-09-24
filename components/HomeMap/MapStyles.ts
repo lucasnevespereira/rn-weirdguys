@@ -1,10 +1,11 @@
 import { Dimensions } from "react-native";
 
-export const mapStyles = [
-  {
-    width: Dimensions.get('window').width,
-    height: Dimensions.get('window').height,
-  },
+export const globalMapStyles = {
+  width: Dimensions.get('window').width,
+  height: Dimensions.get('window').height,
+}
+
+export const customMapStyles = [
   {
     featureType: "all",
     elementType: "labels.text.fill",
