@@ -1,4 +1,10 @@
-export default [
+import { Dimensions } from "react-native";
+
+export const mapStyles = [
+  {
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
+  },
   {
     featureType: "all",
     elementType: "labels.text.fill",

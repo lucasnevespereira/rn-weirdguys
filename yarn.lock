@@ -2757,6 +2757,14 @@ expo-keep-awake@~9.2.0:
   resolved "https://registry.npmjs.org/expo-keep-awake/-/expo-keep-awake-9.2.0.tgz#9cbdcc8264c943ef29a58326236cd34267e98f43"
   integrity sha512-R5jAx5j3MqrhKFB307FBpaHtYSYeVIFX/rVforBF5inKonYjXRWVhjGoBjolF4geAryNamC3NKhMfxyaaB0W6Q==
 
+expo-location@~12.1.2:
+  version "12.1.2"
+  resolved "https://registry.npmjs.org/expo-location/-/expo-location-12.1.2.tgz#66641a087f1aa4231c9e49ea9d520438d3e35f33"
+  integrity sha512-6P/JR8xkw7UjifiDhyvgYtGZ1iKSLjmAcb0Ksirh3jA3Sao7dbz5ykPu44+UnUZ/SLVqaScJoyMkGclFrtzu8Q==
+  dependencies:
+    "@expo/config-plugins" "^3.0.0"
+    expo-modules-core "~0.2.0"
+
 expo-modules-autolinking@^0.0.3:
   version "0.0.3"
   resolved "https://registry.npmjs.org/expo-modules-autolinking/-/expo-modules-autolinking-0.0.3.tgz#45ba8cb1798f9339347ae35e96e9cc70eafb3727"
@@ -4764,6 +4772,11 @@ react-is@^17.0.1:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
   integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
+
+react-native-geolocation-service@^5.3.0-beta.2:
+  version "5.3.0-beta.2"
+  resolved "https://registry.npmjs.org/react-native-geolocation-service/-/react-native-geolocation-service-5.3.0-beta.2.tgz#78faeb06315c975e64774199a2e0cf3ab9f3242f"
+  integrity sha512-mK040gw0g/ZinWQmJ7uS5N9XlC3mG7+oMifR6MKZ0U7tQjrYiXe/oFF8DmujuNle+KRaqFMK67ZXesg7RmZZ/A==
 
 react-native-maps@0.28.0:
   version "0.28.0"
