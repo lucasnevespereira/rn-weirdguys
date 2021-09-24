@@ -1,23 +1,31 @@
 import React, { useEffect, useState } from 'react';
-import { SafeAreaView } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
 import styles from './styles'
 import * as Location from 'expo-location'
 import HomeScreen from './screens/HomeScreen';
 
 export default function App() {
-  const getLocation = async () => {
-    return await Location.getCurrentPositionAsync()
 
+  const _getLocation = async () => {
+    
+    const { status } = await Location.requestForegroundPermissionsAsync();
+    if (status !== 'granted') {
+      console.warn('Permission to access location was denied');
+      return;
+    }
+    let location = await Location.getCurrentPositionAsync()
+    console.log(location);
+    return;
   }
   
   useEffect(() => {
-   getLocation()  
+    _getLocation()
   }, [])
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       <HomeScreen />
-    </SafeAreaView>
+    </View>
   );
 }
 
