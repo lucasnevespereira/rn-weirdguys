@@ -3,14 +3,16 @@ import { View } from 'react-native';
 import styles from './styles'
 import HomeScreen from './screens/HomeScreen';
 import { AppContext } from './context';
-import { defaultPosition } from './types';
+import { defaultPosition, defaultSpots } from './types';
 import { useGetLocation } from './hooks/useGetLocation';
 
 export default function App() {
   const [position, setPosition] = React.useState(defaultPosition)
+  const [spots, setSpots] = React.useState(defaultSpots)
 
   const appValues = {
-    positionContext: { position, setPosition }
+    positionContext: { position, setPosition },
+    spotsContext: {spots, setSpots}
   }
 
   useEffect(() => {

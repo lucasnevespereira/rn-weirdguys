@@ -1,5 +1,5 @@
-import React, { useContext } from 'react'
-import Map from '../components/HomeMap/Map'
+import React from 'react'
+import Map from '../components/Map/Map'
 
 const HomeScreen = () => {
   return (
